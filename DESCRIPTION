@@ -1,0 +1,19 @@
+Package: firstpackage
+Encoding: UTF-8
+Type: Package
+Title: My first package
+Version: 0.1.0
+Author: Authors@R: c(person("Gerhard", "Nachtmann", role = c("aut", "cre"),
+    email = "kpm.nachtmann@gmail.com"),
+    person("Sebastian", "Schnell", role = "aut"),
+    person("RStudio", role = "aut"))
+Maintainer: Gerhard Nachtmann <kpm.nachtmann@gmail.com>
+Description: Some functions for ISPS16.
+    To be used as template for R-packages using Rcpp and
+    roxygen2. Original template is provided by RStudio.
+License: GPL (>= 2)
+LazyData: TRUE
+Imports:
+    Rcpp (>= 0.12.7)
+LinkingTo: Rcpp
+RoxygenNote: 5.0.1
