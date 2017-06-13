@@ -15,4 +15,3 @@ using an Rcpp function to create a list
 \examples{
 rcpp_hello()
 }
-

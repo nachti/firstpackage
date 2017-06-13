@@ -15,4 +15,3 @@ This is our first function using roxygen2
 \examples{
 hello()
 }
-
