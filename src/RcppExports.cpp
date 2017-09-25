@@ -5,6 +5,17 @@
 
 using namespace Rcpp;
 
+// meanC
+double meanC(NumericVector x);
+RcppExport SEXP firstpackage_meanC(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(meanC(x));
+    return rcpp_result_gen;
+END_RCPP
+}
 // rcpp_hello
 List rcpp_hello();
 RcppExport SEXP firstpackage_rcpp_hello() {
@@ -17,6 +28,7 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"firstpackage_meanC", (DL_FUNC) &firstpackage_meanC, 1},
     {"firstpackage_rcpp_hello", (DL_FUNC) &firstpackage_rcpp_hello, 0},
     {NULL, NULL, 0}
 };
